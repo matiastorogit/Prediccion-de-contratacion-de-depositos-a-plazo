@@ -1,18 +1,18 @@
 ## Sobre el proyecto
 
-Este proyecto predice si un cliente contratará un **depósito a plazo fijo** a partir de datos de una campaña de telemarketing bancario (`bank.csv`, una versión revisada del *Bank Marketing Dataset*). El objetivo es entrenar un modelo que resuelva un problema de negocio real: **¿a qué clientes debería llamar el banco para maximizar las suscripciones y minimizar el tiempo de sus trabajadores?**
+Aquó predigo si un cliente contratará un **depósito a plazo fijo** a partir de datos de una campaña de telemarketing bancario (`bank.csv`, una versión revisada del *Bank Marketing Dataset*). Mi objetivo es entrenar un modelo que resuelva un problema de negocio real: **¿a qué clientes debería llamar el banco para maximizar las suscripciones y minimizar el tiempo de sus trabajadores?**
 
-Cada desición dentro del proyecto está respaldada por un análisis estadístico o una validación empírica.
+Cada desición dentro del proyecto la respaldé con un análisis estadístico o una validación empírica.
 
 ### Puntos claves del proyecto
 
-- **Estadística**: selección de tests según los supuestos de los datos. Mann-Whitney U y correlación Point-Biserial para variables numéricas (que no asumen linealidad ni normalidad), Chi-cuadrado y Cramér's V para variables categóricas, y Mutual Information para detectar relaciones no lineales que los métodos anteriores no capturan bien.
-- **Feature engineering**: creación de variables (`contacted_before`), tratamiento de valores centinela (`pdays = -1`), y detección temprana de *data leakage* y multicolinealidad.
+- **Estadística**: elegí tests según los supuestos de los datos. Mann-Whitney U y correlación Point-Biserial para variables numéricas (que no asumen linealidad ni normalidad), Chi-cuadrado y Cramér's V para variables categóricas, y Mutual Information para detectar relaciones no lineales que los métodos anteriores no capturan bien.
+- **Feature engineering**: hice creación de variables (`contacted_before`), tratamiento de valores centinela (`pdays = -1`), y detección temprana de *data leakage* y multicolinealidad.
 - **Feature selection**: Feature Importance y Permutation Importance con Random Forest validadas con Stratified 5-Fold Cross-Validation
-- **Selección de modelo**: comparación entre Árbol de Decisión, Random Forest y XGBoost, además de descartar modelos basados en distancia (KNN, SVM) debido a presencia de outliers y relaciones no lineales en los datos.
-- **Ajuste de hiperparámetros reproducible**: definición de hiperaparámetros usando cross-validation para `max_depth` y `n_estimators`.
+- **Selección de modelo**: comparé Árbol de Decisión, Random Forest y XGBoost, además de descartar modelos basados en distancia (KNN, SVM) debido a presencia de outliers y relaciones no lineales en los datos.
+- **Ajuste de hiperparámetros reproducible**: la definición de hiperaparámetros la hice usando cross-validation para `max_depth` y `n_estimators`.
 - **Evaluación orientada a negocio**: la métrica de selección final no es accuracy sino Recall. Esto debido a estimaciones de costo real de falsos negativos vs. falsos positivos.
-- **Extra**:  Se incluye una simulación de aplicación. Ranking de clientes nuevos por probabilidad de suscripción.
+- **Extra**:  incluí una simulación de aplicación. Ranking de clientes nuevos por probabilidad de suscripción.
 ### Stack
 
 `pandas` · `numpy` · `matplotlib` / `seaborn` · `scipy.stats` · `scikit-learn` · `xgboost`
