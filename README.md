@@ -141,3 +141,10 @@ graph TD
     G2 --> S8
     H4 --> S9
 ```
+## Algunos gráficos dentro del notebook
+<img width="622" height="543" alt="graph21" src="https://github.com/user-attachments/assets/4100d2cb-d7b0-4b9d-af4d-a02fc9f0e985" />
+<img width="889" height="690" alt="graph22" src="https://github.com/user-attachments/assets/252956d5-93bc-4a3a-bc4c-c46e9b61d143" />
+<img width="989" height="396" alt="graph23" src="https://github.com/user-attachments/assets/41682e52-fa84-4adf-be7d-e1f603efa8e3" />
+<img width="1189" height="495" alt="graph24" src="https://github.com/user-attachments/assets/96b51b88-5fb5-4ebc-a11b-d07c2547e04a" />
+<img width="1473" height="413" alt="graph25" src="https://github.com/user-attachments/assets/c0ff83ea-9814-4c94-b7e3-3e30e1b5adb1" />
+
